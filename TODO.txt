@@ -1,9 +1,14 @@
 TODO Front End:
+
 1. Add A New Topic
-   Would Add A new Topic Which We Can Add Target to it
+   Would Add A new Topic Which We Can Add Target to It
 
 2. Add A New Target
    Would Add A New Target Under A Topic.
 
+3. Fix Percent Bar Accuracy Bug (2/2 targets are shown as 150%)
+   #Seems Like Dfif Fixed It, Nice..
 
-* (1) & (2) Would Both Update DB and UI OFC
+4. Add Percent Bar To Each Target To Specify Percent Accomplished Of That Target.
+
+* (1) & (2) Would Both UI In Real Time
