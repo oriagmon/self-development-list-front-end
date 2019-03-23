@@ -10,13 +10,13 @@
         "url": "https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding"
       }
     ],
-    "tags": ["all", "Meta tag"]
+    "tags": ["all", "head", "Meta tag"]
   },
   {
     "title": "Charset",
     "priority": "High",
     "description": "The charset declared (UTF-8) is declared correctly.",
     "code": "https://gist.github.com/thedaviddias/7074c2b93faf1ad1f0c2792258a9b060.js",
-    "tags": ["all", "Meta tag"]
+    "tags": ["all", "head", "Meta tag"]
   }
 ]

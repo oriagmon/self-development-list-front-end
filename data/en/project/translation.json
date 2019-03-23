@@ -16,10 +16,10 @@
     "JAVASCRIPT_DESACTIVATE": "Your JavaScript seems to be desactivated. Please enable your JavaScript to use all functionnalities of the Front-End Checklist."
   },
   "form": {
-    "LABEL_PROJECT_NAME": "Project Name",
-    "TITLE_PROJECT_NAME": "Type the name of your project",
-    "LABEL_PAGE_TITLE": "Page title or URL",
-    "TITLE_PAGE_TITLE": "Type the name of your page or URL",
+    "LABEL_PROJECT_NAME": "Your Board Name",
+    "TITLE_PROJECT_NAME": "<translation.json> TITLE_PROJECT_NAME",
+    "LABEL_PAGE_TITLE": "<translation.json> LABEL_PROJECT_TITLE",
+    "TITLE_PAGE_TITLE": "<translation.json> TITLE_PROJECT_TITLE",
     "LABEL_DEVELOPER_NAME": "Developer's name or team",
     "TITLE_DEVELOPER_NAME": "Type your name or the name of your team",
     "LABEL_SEARCH": "Search",

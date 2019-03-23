@@ -1,0 +1,9 @@
+TODO Front End:
+1. Add A New Topic
+   Would Add A new Topic Which We Can Add Target to it
+
+2. Add A New Target
+   Would Add A New Target Under A Topic.
+
+
+* (1) & (2) Would Both Update DB and UI OFC
