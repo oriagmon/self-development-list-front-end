@@ -6,9 +6,7 @@ yarn-error.log*
 test/unit/coverage
 test/e2e/reports
 selenium-debug.log
-dist/img
-dist/scripts
-dist/styles
+dist/
 .tmp/
 
 # Editor directories and files
