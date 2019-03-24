@@ -1,0 +1,152 @@
+//colors
+$color_black_haze_approx: #f7f7f7;
+$color_puerto_rico_approx: #43d1af;
+$white: #fff;
+$color_celeste_approx: #ccc;
+$color_fuscous_gray_approx: #555;
+$color_shamrock_approx: #30c29e;
+
+//fonts
+$font_0: Arial;
+$font_1: Helvetica;
+$font_2: sans-serif;
+
+//@extend-elements
+//original selectors
+//.form-style-6 input[type="text"], .form-style-6 input[type="date"], .form-style-6 input[type="datetime"], .form-style-6 input[type="email"], .form-style-6 input[type="number"], .form-style-6 input[type="search"], .form-style-6 input[type="time"], .form-style-6 input[type="url"], .form-style-6 textarea, .form-style-6 select
+%extend_1 {
+	outline: none;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	width: 100%;
+	background: $white;
+	margin-bottom: 4%;
+	border: 1px solid $color_celeste_approx;
+	padding: 3%;
+	color: $color_fuscous_gray_approx;
+	font: 95% $font_0, $font_1, $font_2;
+}
+
+//original selectors
+//.form-style-6 input[type="text"]:focus, .form-style-6 input[type="date"]:focus, .form-style-6 input[type="datetime"]:focus, .form-style-6 input[type="email"]:focus, .form-style-6 input[type="number"]:focus, .form-style-6 input[type="search"]:focus, .form-style-6 input[type="time"]:focus, .form-style-6 input[type="url"]:focus, .form-style-6 textarea:focus, .form-style-6 select:focus
+%extend_2 {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 5px $color_puerto_rico_approx;
+	padding: 3%;
+	border: 1px solid $color_puerto_rico_approx;
+}
+
+//original selectors
+//.form-style-6 input[type="submit"], .form-style-6 input[type="button"]
+%extend_3 {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: $color_puerto_rico_approx;
+	border-bottom: 2px solid $color_shamrock_approx;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	color: $white;
+}
+
+.form_wrapper{
+    position:absolute;
+    z-index: 999999;
+    margin-left: 25%;
+    display: none;
+
+
+}
+.form-style-6 {
+    justify-content: center;
+	h1 {
+		background: $color_puerto_rico_approx;
+		padding: 20px 0;
+		font-size: 140%;
+		font-weight: 300;
+		text-align: center;
+		color: $white;
+        margin: -16px -16px 16px -16px;
+	}
+	input[type="text"] {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	input[type="date"] {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	input[type="datetime"] {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	input[type="email"] {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	input[type="number"] {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	input[type="search"] {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	input[type="time"] {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	input[type="url"] {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	textarea {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	select {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_2;
+		}
+	}
+	input[type="submit"] {
+		@extend %extend_3;
+		&:hover {
+			background: $color_shamrock_approx;
+		}
+	}
+	input[type="button"] {
+		@extend %extend_3;
+		&:hover {
+			background: $color_shamrock_approx;
+		}
+	}
+}
+.form-style-6 {
+	font: 95% $font_0, $font_1, $font_2;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: $color_black_haze_approx;
+}

@@ -3,7 +3,7 @@ TODO Front End:
 1. Add A New Topic
    Would Add A new Topic Which We Can Add Target to It
 
-2. Add A New Target
+2. Add A New Target [POC Level- Done]
    Would Add A New Target Under A Topic.
 
 3. Fix Percent Bar Accuracy Bug (2/2 targets are shown as 150%)

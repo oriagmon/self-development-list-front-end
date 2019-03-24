@@ -7,9 +7,18 @@ block main
 
   //- List each section (the order is linked to the order of the c-nav)
   //- _items is in the JSON injected in the view with gulp-data (called _project.json)
+  //- TODO: pick that data up from DB
   .s-main__section.s-main__checklist
 
     if _items !== undefined
+      div.form_wrapper(action="javascript:complete_edit_form();" id="edit_target_form")
+        .form-style-6
+          h1 Edit
+          form
+            input(type='text' name='title' placeholder='Target Title' id='target_title_edit')
+            textarea(name='description' placeholder='Target Description', id='target_description_edit')
+            input(type='text' name='priority' placeholder='Target Priority')
+            input(type='submit' value='Send')
 
       +checklist-section({
         dataSection: _items.head,

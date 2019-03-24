@@ -97,8 +97,9 @@ class Tools {
     seems like Im adding the new target shallowly:
     1. the new target does not have all the fields
     2. the new target seems open instead of close 
-    3. Add A pop-up box to choose the new target fields!
+    3. transpert the whole screen and leave the pop-up form 0% transperet on add click
     */
+    document.getElementById('edit_target_form').style.display = 'block';
     const TARGETS_LENGTH = TOPICS_LIST.children.length;
     var item_example = TOPICS_LIST.children[0];
     var new_item = document.createElement('li');

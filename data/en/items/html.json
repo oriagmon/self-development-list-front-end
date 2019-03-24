@@ -3,12 +3,6 @@
     "title": "Target",
     "priority": "High",
     "description": "HTML5 Semantic Elements are used appropriately (header, section, footer, main...).",
-    "tools": [
-      {
-        "title": "HTML Reference",
-        "url": "http://htmlreference.io/"
-      }
-    ],
     "tags": ["all", "html", "best practices"]
   }
 ]

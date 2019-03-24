@@ -57,6 +57,12 @@ class Utils {
     return detailsContainer;
   }
 
+  complete_edit_form(){ //would be called upon "new" and "Edit" as well!
+    document.getElementById('edit_target_form').style.display = 'none';
+    //todo:
+    //inform backend we want to update/ add new target
+  }
+
   /* eslint-disable */
   getClosest(elem, selector) {
     if (!Element.prototype.matches) {
