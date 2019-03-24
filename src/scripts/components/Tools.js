@@ -23,6 +23,8 @@ class Tools {
 
     this.hideSectionButton = document.querySelectorAll('.js-hide-section');
 
+    this.addItemHandler = document.querySelectorAll('.js-add-item');
+
     return instance;
   }
 
@@ -75,6 +77,33 @@ class Tools {
         localStorage.setItem(keyName, JSON.stringify(currentObj));
       }
     });
+  }
+
+  addNewTargetBtn(btn) {
+    /*Opens Box To choose new item title, 
+    and then adds the item to the list */
+    console.log('NICE!');
+    const TOPIC = btn.parentNode.parentNode.parentNode.parentNode;
+    const TOPIC_NAME = (TOPIC.getElementsByClassName('s-checklist__header__title'))[0].innerText;
+    var TOPICS_LIST = TOPIC.getElementsByClassName('c-checklist__list')[0];
+    
+    if (undefined == TOPICS_LIST || undefined == TOPICS_LIST.children || undefined == TOPICS_LIST.children[0])
+    {
+      console.log('<addNewTargetBtn> Couldnt not add a new topic');
+      return;
+    }
+    /*
+    Todo:
+    seems like Im adding the new target shallowly:
+    1. the new target does not have all the fields
+    2. the new target seems open instead of close 
+    3. Add A pop-up box to choose the new target fields!
+    */
+    const TARGETS_LENGTH = TOPICS_LIST.children.length;
+    var item_example = TOPICS_LIST.children[0];
+    var new_item = document.createElement('li');
+    new_item.innerHTML = item_example.innerHTML.replace('head-0', 'head-'+TARGETS_LENGTH);
+    TOPICS_LIST.appendChild(new_item);
   }
 
   /**
@@ -163,6 +192,15 @@ class Tools {
         'click',
         () => {
           instance.hideShow(btn);
+        }
+      );
+    });
+
+    this.addItemHandler.forEach(btn => {
+      btn.addEventListener(
+        'click',
+        () => {
+          instance.addNewTargetBtn(btn);
         }
       );
     });

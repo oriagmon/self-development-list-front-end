@@ -11,4 +11,8 @@ TODO Front End:
 
 4. Add Percent Bar To Each Target To Specify Percent Accomplished Of That Target.
 
+5. Edit Target
+
+6. Delete Target
+
 * (1) & (2) Would Both UI In Real Time

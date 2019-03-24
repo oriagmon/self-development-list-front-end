@@ -24,6 +24,8 @@
     "TITLE_DEVELOPER_NAME": "Type your name or the name of your team",
     "LABEL_SEARCH": "Search",
     "BUTTON_START_NEW": "Start new checklist",
-    "BUTTON_GENERATE_PRINT": "Generate report"
+    "BUTTON_GENERATE_PRINT": "Generate report",
+    "BUTTON_START_NEW_TOPIC": "New Topic",
+    "BUTTON_START_NEW_TARGET": "New Target"
   }
 }
